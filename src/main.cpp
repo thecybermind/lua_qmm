@@ -28,17 +28,17 @@ plugininfo_t g_plugininfo = {
 	LUA_QMM_BUILDER,							// author of plugin
 	"https://github.com/thecybermind/lua_qmm/",	// website of plugin
 };
-eng_syscall_t g_syscall = NULL;
-mod_vmMain_t g_vmMain = NULL;
-pluginfuncs_t* g_pluginfuncs = NULL;
-pluginvars_t* g_pluginvars = NULL;
+eng_syscall_t g_syscall = nullptr;
+mod_vmMain_t g_vmMain = nullptr;
+pluginfuncs_t* g_pluginfuncs = nullptr;
+pluginvars_t* g_pluginvars = nullptr;
 
 // store the game's entity and client info
-gentity_t* g_gents = NULL;
-int g_numgents = 0;
-int g_gentsize = sizeof(gentity_t);
-gclient_t* g_clients = NULL;
-int g_clientsize = sizeof(gclient_t);
+gentity_t* g_gents = nullptr;
+intptr_t g_numgents = 0;
+intptr_t g_gentsize = sizeof(gentity_t);
+gclient_t* g_clients = nullptr;
+intptr_t g_clientsize = sizeof(gclient_t);
 
 
 C_DLLEXPORT void QMM_Query(plugininfo_t** pinfo) {
